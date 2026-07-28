@@ -1162,21 +1162,45 @@ do
 end
 
 do
-	local classIcon = [[|TInterface\WorldStateFrame\ICONS-CLASSES:32:32:0:0:256:256:%s|t]]
+-- Ajustamos el tamaño total a 512:512
+	local classIcon = [[|TInterface\AddOns\ElvUI\Media\Textures\classes_small_alpha:32:32:0:0:512:512:%s|t]]
+	
 	local classIcons = {
-		WARRIOR		= '0:64:0:64',
-		MAGE		= '64:128:0:64',
-		ROGUE		= '128:192:0:64',
-		DRUID		= '192:256:0:64',
-		HUNTER		= '0:64:64:128',
-		SHAMAN		= '64:128:64:128',
-		PRIEST		= '128:192:64:128',
-		WARLOCK		= '192:256:64:128',
-		PALADIN		= '0:64:128:192',
-		DEATHKNIGHT = '64:128:128:192',
-		MONK		= '128:192:128:192',
-		DEMONHUNTER = '192:256:128:192',
-		EVOKER		= '0:64:192:256',
+		-- Clases Custom de Conquest of Azeroth
+		WITCHHUNTER  = '448:512:192:256',
+		WITCHDOCTOR  = '384:448:192:256',
+		WILDWALKER   = '320:384:192:256',
+		TINKER       = '128:192:192:256',
+		SUNCLERIC    = '64:128:192:256',
+		STORMBRINGER = '0:64:192:256',
+		STARCALLER   = '448:512:128:192',
+		SPIRITMAGE   = '384:448:128:192',
+		SONOFARUGAL  = '320:384:128:192',
+		REAPER       = '128:192:128:192',
+		RANGER       = '64:128:128:192',
+		PYROMANCER   = '0:64:128:192',
+		PROPHET      = '448:512:64:128',
+		NECROMANCER  = '256:320:64:128',
+		HERO         = '0:64:64:128',
+		GUARDIAN     = '448:512:0:64',
+		FLESHWARDEN  = '384:448:0:64',
+		CULTIST      = '128:192:0:64',
+		CHRONOMANCER = '64:128:0:64',
+		BARBARIAN    = '0:64:0:64',
+
+		-- Clases Clásicas de WoW
+		WARRIOR      = '256:320:192:256',
+		WARLOCK      = '192:256:192:256',
+		SHAMAN       = '256:320:128:192',
+		ROGUE        = '192:256:128:192',
+		PRIEST       = '384:448:64:128',
+		PALADIN      = '320:384:64:128',
+		MONK         = '192:256:64:128',
+		MAGE         = '128:192:64:128',
+		HUNTER       = '64:128:64:128',
+		DRUID        = '320:384:0:64',
+		DEMONHUNTER  = '256:320:0:64',
+		DEATHKNIGHT  = '192:256:0:64',
 	}
 
 	E:AddTag('class:icon', 'PLAYER_TARGET_CHANGED', function(unit)
