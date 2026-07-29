@@ -17,7 +17,9 @@ E.Media = {
 		Expressway = M..[[Fonts\Expressway.ttf]],
 		Homespun = M..[[Fonts\Homespun.ttf]],
 		Invisible = M..[[Fonts\Invisible.ttf]],
-		PTSansNarrow = M..[[Fonts\PTSansNarrow.ttf]]
+		PTSansNarrow = M..[[Fonts\PTSansNarrow.ttf]],
+		ToxiUI = M..[[Fonts\ToxiUI.ttf]],
+		Prototype = M..[[Fonts\Prototype.ttf]]
 	},
 	Sounds = {
 		AwwCrap = M..[[Sounds\AwwCrap.ogg]],
@@ -135,8 +137,21 @@ E.Media = {
 		Smooth = M..[[Textures\Smooth.tga]],
 		Spark = M..[[Textures\Spark.tga]],
 		Tank = M..[[Textures\Tank.tga]],
-		ExitVehicle = M..[[Textures\ExitVehicle.tga]]
-	}
+		ExitVehicle = M..[[Textures\ExitVehicle.tga]],
+		ToxiUIHalfTransparentStroke = M..[[Textures\ToxiUI-half-transparent-stroke.blp]],
+		ToxiUIHalfTransparent = M..[[Textures\ToxiUI-half-transparent.blp]],
+		ToxiUIHalf = M..[[Textures\ToxiUI-half.tga]],
+		ToxiUIGrad = M..[[Textures\ToxiUI-grad.tga]],
+		ToxiUIG2 = M..[[Textures\ToxiUI-g2.tga]],
+		ToxiUIG1 = M..[[Textures\ToxiUI-g1.tga]],
+		ToxiUIFade = M..[[Textures\ToxiUI-fade.blp]],
+		ToxiUIDark = M..[[Textures\ToxiUI-dark.tga]],
+		ToxiUIClean = M..[[Textures\ToxiUI-clean.tga]],
+		BuiOnePixel = M..[[Textures\BuiOnePixel.tga]],
+		BezoDark2 = M..[[Textures\Bezo-dark2.blp]],
+		BezoDark1 = M..[[Textures\Bezo-dark1.blp]],
+		Bezo = M..[[Textures\Bezo.blp]]
+		}
 }
 
 LSM:Register("border", "ElvUI GlowBorder", E.Media.Textures.GlowTex)
@@ -146,6 +161,8 @@ LSM:Register("font", "Action Man", E.Media.Fonts.ActionMan)
 LSM:Register("font", "Expressway", E.Media.Fonts.Expressway, LSM.LOCALE_BIT_ruRU + LSM.LOCALE_BIT_western)
 LSM:Register("font", "PT Sans Narrow", E.Media.Fonts.PTSansNarrow, LSM.LOCALE_BIT_ruRU + LSM.LOCALE_BIT_western)
 LSM:Register("font", "Homespun", E.Media.Fonts.Homespun, LSM.LOCALE_BIT_ruRU + LSM.LOCALE_BIT_western)
+LSM:Register("font", "ToxiUI", E.Media.Fonts.ToxiUI)
+LSM:Register("font", "Prototype", E.Media.Fonts.Prototype)
 LSM:Register("sound", "ElvUI Aska", E.Media.Sounds.SndIncMsg)
 LSM:Register("sound", "Awww Crap", E.Media.Sounds.AwwCrap)
 LSM:Register("sound", "BBQ Ass", E.Media.Sounds.BbqAss)
@@ -161,4 +178,17 @@ LSM:Register("statusbar", "ElvUI Gloss", E.Media.Textures.NormTex)
 LSM:Register("statusbar", "ElvUI Norm", E.Media.Textures.NormTex2)
 LSM:Register("statusbar", "Minimalist", E.Media.Textures.Minimalist)
 LSM:Register("statusbar", "ElvUI Blank", E.Media.Textures.White8x8)
+LSM:Register("statusbar", "ToxiUI Half Transparent Stroke", E.Media.Textures.ToxiUIHalfTransparentStroke)
+LSM:Register("statusbar", "ToxiUI Half Transparent", E.Media.Textures.ToxiUIHalfTransparent)
+LSM:Register("statusbar", "ToxiUI Half", E.Media.Textures.ToxiUIHalf)
+LSM:Register("statusbar", "ToxiUI Grad", E.Media.Textures.ToxiUIGrad)
+LSM:Register("statusbar", "ToxiUI G2", E.Media.Textures.ToxiUIG2)
+LSM:Register("statusbar", "ToxiUI G1", E.Media.Textures.ToxiUIG1)
+LSM:Register("statusbar", "ToxiUI Fade", E.Media.Textures.ToxiUIFade)
+LSM:Register("statusbar", "ToxiUI Dark", E.Media.Textures.ToxiUIDark)
+LSM:Register("statusbar", "ToxiUI Clean", E.Media.Textures.ToxiUIClean)
+LSM:Register("statusbar", "BUI One Pixel", E.Media.Textures.BuiOnePixel)
+LSM:Register("statusbar", "Bezo Dark 2", E.Media.Textures.BezoDark2)
+LSM:Register("statusbar", "Bezo Dark 1", E.Media.Textures.BezoDark1)
+LSM:Register("statusbar", "Bezo", E.Media.Textures.Bezo)
 LSM:Register("background", "ElvUI Blank", E.Media.Textures.White8x8)
